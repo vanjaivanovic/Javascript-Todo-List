@@ -1,10 +1,10 @@
-@import "variables.scss";
-@import "mobile.scss";
+@import "_variables.scss";
+@import "_mobile.scss";
 
 @media screen and (min-width: 576px){
-   @import "tablet.scss";
+   @import "_tablet.scss";
 }
 
 @media screen and (min-width: 768px){
-   @import "desktop.scss";
+   @import "_desktop.scss";
 }

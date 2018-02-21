@@ -35,3 +35,11 @@ function addTask() {
     }
   }
 }
+
+function reset () {
+  list.innerHTML = " ";
+}
+
+function resetCompleted() {
+  completed.innerHTML = " ";
+}
