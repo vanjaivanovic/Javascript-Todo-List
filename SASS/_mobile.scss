@@ -6,37 +6,33 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     position: static;
  }
- 
-.wrapper {
-     height: 800px;
-}
- 
+
 hr {
     overflow: visible; /* For IE */
-    margin: 100px 50px 100px 50px;
+    margin: 100px 200px 0 200px;
     height: 30px;
     border-style: solid;
     border-color: black;
     border-width: 3px 0 0 0;
-  
 }
 
-.todos{
-     width: 70%;
+#todoList {
+    list-style: none;
+}
+
+.todos, .donelist{
+     width: 96%;
      padding:20px 20px 20px 20px;
      margin:0 auto;
      margin-top:30px;
-     color: black;
      border-radius: 2px;
-     font-family: 'Passion One', cursive;
      font-size: 20px;
 }
+
 .todos h1, .donelist h1{
-    margin:0;
-    font-family: 'Lobster', cursive;
+    font-family: 'Indie Flower', cursive;
     padding-bottom:20px;
     text-align:center;
 }
@@ -44,9 +40,20 @@ hr {
 #addTask {
     text-align: center;
 }
+
+li {
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 20%;
+}
  
 .btn{
      height: 40px;
+     width: 100px;
+     margin-right: 20px;
+     margin-bottom: 30px;
      font-size: 18px;
      font-family: 'Lora', serif;
      background-color: white;
@@ -56,8 +63,28 @@ hr {
     text-align: center;
 }
 
-.donelist {
-    text-align: center;
+.delete {
+    padding: 2px 9px 3px 9px;
+    margin-right: 20px;
+    background-color: rgb(230, 230, 230);
+    font-family: arial sans-serif;
+    font-size: 17px;
+    border: 0.5px solid grey;
+}
+
+.buttonDone {
+    margin-right: 30px;
+    font-size: 17px;
+}
+
+.completedbtn {
+    margin-left: 45%;
+     height: 40px;
+     width: 100px;
+     margin-bottom: 30px;
+     font-size: 18px;
+     font-family: 'Lora', serif;
+     background-color: white;
 }
    
 input{
@@ -68,13 +95,12 @@ input{
  
  footer {
      height: 50px;
-     padding-top: 10px;
+     padding-top: 40px;
      background-color: rgba(141, 169, 178, 0.8);
 }
  
 footer a {
      color:white;
-     margin:10px;
      font-size: 18px;
      padding-left: 450px;
      text-decoration: none;

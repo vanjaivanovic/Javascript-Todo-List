@@ -8,9 +8,10 @@ function addTask() {
   var span = document.createElement("span");
   var remove = document.createTextNode("\u00D7");
   var buttonDone = document.createElement("button");
-  var buttontxt = document.createTextNode("done");
+  var buttontxt = document.createTextNode("\u2713");
 
   span.className = "delete";
+  buttonDone.className = "buttonDone";
 
   newTask.appendChild(span);
   span.appendChild(remove);
@@ -20,7 +21,7 @@ function addTask() {
   list.appendChild(newTask);
 
   span.onclick = function() {
-    var div = this.parentElement;
+    const div = this.parentElement;
     list.removeChild(div);
   }
 
@@ -42,4 +43,10 @@ function reset () {
 
 function resetCompleted() {
   completed.innerHTML = " ";
+}
+
+function myFunction() {
+    
+    var res = newTask.toUpperCase();
+    document.getElementById("demo").innerHTML = res;
 }
