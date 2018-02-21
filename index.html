@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My todo list</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">       
+</head>                 
+ 
+ <body>
+    <main>
+    <div class="container">
+    <div class="row">
+    <div class="col-xs-6">
+    
+      <h1>Todos</h1>
+             
+      <form id="todoForm">
+           <input type="text" id="todoInput">
+
+           <button type="button" class="waves-effect waves-light btn-large">Add Task</button>
+           <button type="button" class="waves-effect waves-light btn-large">Reset</button>
+       </form>
+       <button id="remove">
+  Remove
+</button>
+    </div> <!--stänger col-xs-6-->
+              
+  <div class="todoList__container">
+       <ul id="todoList">
+
+       </ul>
+   </div>
+ 
+    <hr>
+ 
+    <div class="col-xs-6">
+        <h1>Already Done</h1>
+
+         <button type="button" class="waves-effect waves-light btn-large">Reset</button>
+   
+    <div class="todoList__container">
+       <ul id="completed">
+
+       </ul>
+   </div>
+
+ 
+    </div> <!--stänger col-xs-6-->
+  </div> <!--stänger row-->
+ </main> <!--stänger main-->
+ 
+ 
+<footer>
+<a href="https://github.com/vanjaivanovic">My github</a>
+</footer>
+ 
+ <script src="JS/main.js"></script>
+ 
+  </body>
+</html>
+
