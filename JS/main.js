@@ -18,4 +18,20 @@ function addTask() {
   buttonDone.appendChild(buttontxt);
   newTask.appendChild(text);
   list.appendChild(newTask);
+
+  span.onclick = function() {
+    var div = this.parentElement;
+    list.removeChild(div);
+  }
+
+  buttonDone.onclick = function() {
+    const listItem = this.parentElement;
+    completed.appendChild(listItem);
+    listItem.removeChild(buttonDone);
+
+    span.onclick = function() {
+      var div = this.parentElement;
+      completed.removeChild(div);
+    }
+  }
 }
