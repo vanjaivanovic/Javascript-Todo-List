@@ -45,8 +45,3 @@ function resetCompleted() {
   completed.innerHTML = " ";
 }
 
-function myFunction() {
-    
-    var res = newTask.toUpperCase();
-    document.getElementById("demo").innerHTML = res;
-}

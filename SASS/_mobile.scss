@@ -1,11 +1,12 @@
 
-body{
+body {
     margin:0;
     padding: 0;
-    background-image:url("../images/green.jpeg");
+    background-image:url("../images/ocean.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: static;
  }
 
@@ -56,25 +57,27 @@ li {
      margin-bottom: 30px;
      font-size: 18px;
      font-family: 'Lora', serif;
-     background-color: white;
+     background-color: rgb(255, 204, 255);
 }
 
 .buttons{
     text-align: center;
+    padding-left: 30px;
 }
 
 .delete {
     padding: 2px 9px 3px 9px;
     margin-right: 20px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 204, 255);
     font-family: arial sans-serif;
     font-size: 17px;
-    border: 0.5px solid grey;
+    border: 0.5px solid white;
 }
 
 .buttonDone {
     margin-right: 30px;
     font-size: 17px;
+    background-color: rgb(255, 204, 255);
 }
 
 .completedbtn {
@@ -84,13 +87,17 @@ li {
      margin-bottom: 30px;
      font-size: 18px;
      font-family: 'Lora', serif;
-     background-color: white;
+     background-color: rgb(255, 204, 255);
 }
    
 input{
      font-size: 20px;
      width: 400px;
      height: 40px;
+}
+
+.footerlink {
+    text-align: center;
 }
  
  footer {
@@ -102,6 +109,5 @@ input{
 footer a {
      color:white;
      font-size: 18px;
-     padding-left: 450px;
      text-decoration: none;
 }
