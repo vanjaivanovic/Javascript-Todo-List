@@ -1,10 +1,16 @@
+// Här hämtas todoList och completed listan. //
 var list = document.getElementById("todoList");
 var completed = document.getElementById("completed");
 
-function addTask() {
+
+// Här skapas listan med värdet som skrivs i input fältet. //
+ function addTask() {
   var task = document.getElementById("todoInput").value;
   var text = document.createTextNode(task);
   var newTask = document.createElement("li");
+
+
+// Här skapas knapparna för att radera och bocka av. //
   var span = document.createElement("span");
   var remove = document.createTextNode("\u00D7");
   var buttonDone = document.createElement("button");
@@ -13,6 +19,8 @@ function addTask() {
   span.className = "delete";
   buttonDone.className = "buttonDone";
 
+
+// Här läggs radera och bocka av knappen till varje ny uppgift och varje ny uppgift läggs till ul lista. //
   newTask.appendChild(span);
   span.appendChild(remove);
   newTask.appendChild(buttonDone);
@@ -20,11 +28,15 @@ function addTask() {
   newTask.appendChild(text);
   list.appendChild(newTask);
 
+
+// Radera funktion //
   span.onclick = function() {
     const div = this.parentElement;
     list.removeChild(div);
   }
 
+
+// Bocka av, flytta och bocka av knappen försvinner. //
   buttonDone.onclick = function() {
     const listItem = this.parentElement;
     completed.appendChild(listItem);
@@ -37,6 +49,7 @@ function addTask() {
   }
 }
 
+// Rensar hela listan på Todos och Finitos. //
 function reset () {
   list.innerHTML = " ";
 }
